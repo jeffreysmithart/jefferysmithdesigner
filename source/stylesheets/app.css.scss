@@ -1,0 +1,30 @@
+@import "normalize";
+
+//@import "scss/reset";
+@import "scss/variables";
+@import "scss/settings";
+@import "scss/inc/fonts";
+@import "scss/inc/icon-fonts";
+@import "scss/mixins";
+
+// Or selectively include components
+//@import "foundation";
+
+@import "foundation/app";
+
+// @import "foundation/components/grid";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/visibility";
+
+@import "scss/structure";
+@import "scss/inc/nav";
+@import "scss/inc/index";
+@import "scss/inc/footer";
+@import "scss/inc/portfolio";
+@import "scss/about";
+@import "scss/eclipse";
+@import "scss/aura";
+@import "scss/pastels";
+@import "scss/menswear";
+@import "scss/blog";

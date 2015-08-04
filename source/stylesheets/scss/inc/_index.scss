@@ -1,0 +1,98 @@
+.home {
+  #header {
+    overflow: hidden;
+    background: $blue;
+    height: rem-calc(400);
+    @media #{$medium-up} {
+      height: calc(80vh + 60px);
+      min-height: rem-calc(460);
+      max-height: rem-calc(600);
+    }
+    .color-block {
+      width: 50%;
+      height: 150%;
+      display: inline;
+      position: absolute;
+      @media #{$medium-up} {
+        height: 165%;
+      }
+      @media #{$large-up} {
+        height: 175%;
+      }
+    }
+    .green {
+      background: $trans-green;
+      float: left;
+      transform: rotate(-38deg);
+      margin: -31% 10%;
+      -webkit-transform-origin: right bottom;
+      -moz-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+      -o-transform-origin: right bottom;
+      transform-origin: right bottom;
+      @media only screen and (min-width: 40.063em) and (max-width: rem-calc(835)) {
+        margin: -30% 15%;
+      }
+      @media #{$large-up} {
+        margin: -30% 10%;
+      }
+    }
+    .blue {
+      background: $trans-teal;
+      float: right;
+      transform: rotate(38deg);
+      margin: -30% 40%;
+      -webkit-transform-origin: left bottom;
+      -moz-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      -o-transform-origin: left bottom;
+      transform-origin: left bottom;
+      @media only screen and (min-width: 40.063em) and (max-width: rem-calc(1218)) {
+        margin: -30% 35%;
+      }
+      @media only screen and (min-width: rem-calc(1219)) {
+        margin: -28% 43%;
+      }
+    }
+    .title__box {
+      margin: rem-calc(150) auto 0;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    .last__name {
+      margin-top: rem-calc(-22);
+      margin-bottom: r0;
+    }
+    h2 {
+      font-size: rem-calc(80);
+      line-height: 1;
+      margin: 0;
+      @include zona--black;
+      color: $title-gray;
+      font-variant-ligatures: common-ligatures;
+      @media #{$medium-up} {
+        font-size: rem-calc(108);
+      }
+      span.lig {
+        letter-spacing: rem-calc(-4);
+      }
+      span.slab {
+        @include zona--slab;
+      }
+    }
+    h3 {
+      font-size: rem-calc(36);
+      line-height: 1;
+      @include zona--regular;
+      color: $title-gray;
+      margin-top: rem-calc(-10);
+      @media #{$medium-up} {
+        font-size: rem-calc(48);
+      }
+    }
+  }
+}

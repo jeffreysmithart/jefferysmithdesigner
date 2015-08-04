@@ -1,0 +1,62 @@
+// #logo-bar {
+//   max-height: rem-calc(75);
+//   float: left;
+//   position: absolute;
+//   z-index: 100;
+//   img {
+//     margin-top: rem-calc(10);
+//     margin-left: rem-calc(10);
+//     max-height: 100%;
+//     max-height: rem-calc(75);
+//     opacity: 0.6;
+//     filter: alpha(opacity = 60);
+//     @include transition;
+//     &:hover {
+//       opacity: 1;
+//       filter: alpha(opacity = 100);
+//       @include transition;
+//       background: $trans-green;
+//     }
+//   }
+// }
+
+/* main navigation bar
+-----------------------------------------*/
+.navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(#444342, 0.8);
+  padding: 10px;
+  &__inner {}
+  &__links {
+    float: right;
+    @media (max-width: 560px) {
+      width: 100%;
+    }
+    li {
+      display: inline-block;
+      float: left;
+      @media (max-width: 560px) {
+        &:first-child a {
+          padding-left: 0;
+        }
+      }
+      a {
+        display: block;
+        padding: em(10) em(20);
+        color: white;
+        font-family: $sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        &:hover, &:focus {
+          color: darken(white, 20%);
+        }
+      }
+    }
+  }
+  .logo-mark {
+    max-width: em(60);
+    opacity: 0.6;
+  }
+}

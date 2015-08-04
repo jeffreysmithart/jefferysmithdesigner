@@ -1,0 +1,106 @@
+.portfolio__img {
+  div.img__outer__wrapper {
+    background: $light-gray;
+    padding: rem-calc(30) rem-calc(5) rem-calc(5);
+    overflow: auto;
+    border-radius: rem-calc(3);
+    -webkit-box-shadow: 0 2px 3px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0 2px 3px rgba(50, 50, 50, 0.3);
+    box-shadow: 0 2px 3px rgba(50, 50, 50, 0.3);
+    max-width: rem-calc(410);
+    @media #{$small-only} {
+      margin: 0 auto;
+    }
+    div.img__url__bar {
+      background: darken($super-light-gray, 5);
+      height: rem-calc(15);
+      margin-top: rem-calc(-10);
+      margin-bottom: rem-calc(10);
+      margin-right: rem-calc(10);
+      float: right;
+      width: 95%;
+      display: inline-block;
+      border-radius: rem-calc(2);
+    }
+    .browser {
+      z-index: 10;
+      position: relative;
+    }
+    .indicators {
+      float: left;
+      overflow: auto;
+      position: absolute;
+      top: rem-calc(-24);
+      left: rem-calc(10);
+    }
+    .circle {
+      width: rem-calc(7);
+      height: rem-calc(7);
+      border-radius: 50%;
+      float: left;
+      margin-right: rem-calc(5);
+      background: $super-light-gray;
+      &:first-of-type {
+        background: darken($super-light-gray, 10);
+      }
+      &:nth-of-type(2) {
+        background: darken($super-light-gray, 10);
+      }
+      &:nth-of-type(3) {
+        background: darken($super-light-gray, 10);
+      }
+    }
+    .img__inner__wrapper {
+      clear: right;
+      height: 400px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    img {
+      height: auto;
+      //width: 100%;
+      border-radius: rem-calc(3);
+    }
+  }
+}
+
+.portfolio__description {
+  ul {
+    padding-left: em(20);
+    li {
+      @include open;
+    }
+  }
+  h2 {
+    line-height: 1;
+  }
+  h3 {
+    @include zona--regular;
+    text-transform: uppercase;
+    font-size: rem-calc(21);
+  }
+  p {
+    &:last-of-type {
+      margin-top: 2rem;
+    }
+    &.skills {
+      @include open;
+      margin-bottom: 0;
+    }
+  }
+  a {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border: 2px solid $green;
+    border-radius: rem-calc(5);
+    font-family: 'zona pro', sans-serif;
+    letter-spacing: .5px;
+    color: darken($green, 15);
+    @include transition;
+    &:hover {
+      background: $green;
+      color: $white;
+      @include transition;
+    }
+  }
+}

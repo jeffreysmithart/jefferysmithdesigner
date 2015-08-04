@@ -1,0 +1,156 @@
+@import "burger";
+@import "logo-bar";
+
+.menu-button {
+	display: inline-block;
+	padding: .5em;
+	//background-color: $green;
+	border: 2px solid $gray;
+	border-radius: rem-calc(2);
+	float: right;
+	width: 75px;
+	height: 75px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: $gray;
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 100;
+
+	a {
+		p{
+			transition: all 200ms ease-in;
+
+			&:hover {
+				transition: all 200ms ease-in;
+				color: $gray;
+				@include transition(100ms);
+				@include text-shadow;
+			}
+		}
+	}
+	p {
+			text-align: center;
+			margin-top: 1.5em;
+			transition: all 200ms ease-in;
+			@include zona--semibold;
+			text-transform: lowercase;
+
+			&:hover {
+				@include transition(100ms);
+				color: $gray;
+				@include text-shadow;
+			}
+		
+
+		}
+	
+
+}
+
+.burger-icon {
+	@include burger(25px, 3px, 5px, $gray);
+	margin-left: auto;
+	margin-right: auto;
+
+
+}
+
+.menu-button{
+	background-color: rgba(whitesmoke, 0.25);
+	transition:all 200ms ease;
+	&.is-active {
+		background-color: whitesmoke;
+		.burger-icon {
+			@include burger-to-cross;
+			
+		}
+	}
+}
+
+.menu-box {
+	width: 75px;
+	height: 0;
+	overflow: hidden;
+	transition: all 200ms ease;
+	float: none;
+	text-align: center;
+	position: fixed;
+	top: 85px;
+	right: 10px;
+
+	ul {
+		margin-left: 0;
+		border-left: 2px solid transparent;
+		border-right: 2px solid transparent;
+	}
+
+	li {
+		border-bottom: 2px solid transparent;
+	}
+
+	a{
+		color: transparent;
+		font-weight: 100;
+		font-size: .9rem;
+		padding: 0 .1rem;
+		text-decoration: none;
+		transition: all 200ms ease-in;
+		@include zona--regular;
+
+		&:hover {
+			transition: all 200ms ease-in;
+		}
+	}
+
+
+}
+
+.active {
+	width: 75px;
+	height: 228px;
+	background: rgba(255,255,255, 0.80);
+	transition: all 200ms ease;
+	z-index: 99;
+
+	ul {
+		border-left: 2px solid $gray;
+		border-right: 2px solid $gray;
+	}
+	
+	li {
+		border-bottom: 2px solid $gray;
+		overflow: hidden;
+
+			a {
+				color: $gray;
+				font-size: .85rem;
+				border-left: 1px solid rgba(0,0,0, 0.2);
+				border-right: 1px solid rgba(0,0,0, 0.2);
+				-moz-background-clip: padding;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+			}
+		
+	}
+
+
+	a {
+		width: 75px;
+		height: 74px;
+		display: inline-block;
+		float: none;
+		line-height: 75px;
+		vertical-align: baseline;
+		box-sizing: border-box;
+	
+
+		
+
+		&:hover {
+			background: $white;
+			transition: all 200ms ease;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+@mixin transition($t-time: 200ms, $ease: ease ) {
+	transition: all $t-time $ease;
+}
+
+
+@mixin text-shadow($opac: .3) {
+	-webkit-text-shadow: 0 2px 3px rgba(50,50,50,$opac);
+	-moz-text-shadow: 0 2px 3px rgba(50,50,50,$opac);
+	text-shadow: 0 2px 3px rgba(50,50,50,$opac);
+}
+
+@mixin box-shadow($opac: .3) {
+	-webkit-box-shadow: 0 2px 3px rgba(50,50,50,$opac);
+	-moz-box-shadow: 0 2px 3px rgba(50,50,50,$opac);
+	box-shadow: 0 2px 3px rgba(50,50,50,$opac);
+}
+
+	
+
+
+@mixin border-button($side-pad: 1rem, $top-pad: .5rem) {
+	a {
+		margin-top: 1rem;
+		padding: $top-pad $side-pad;
+		border: 2px solid $green;
+		border-radius: rem-calc(5);
+		font-family: 'zona pro', sans-serif;
+		letter-spacing: .5px;
+		@include transition;
+
+		&:hover {
+			color: $green;
+			@include transition;
+
+		}
+	}
+}
+
+
+/* font stacks =============*/
+
+@mixin zona--regular { 
+	font-family: 'zona_proregular', sans-serif;
+}
+
+@mixin zona--semibold { 
+	font-family: 'zona_prosemibold', sans-serif;
+}
+
+@mixin zona--black { 
+	font-family: 'zona_problack', sans-serif;
+}
+
+@mixin zona--slab { 
+	font-family: 'zona_black_slab_regular';
+}
+
+@mixin crimson {
+	font-family: 'Crimson Text', 'serif';
+}
+
+@mixin open {
+	font-family: 'Open Sans', 'sans-serif';
+}

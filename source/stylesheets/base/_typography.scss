@@ -1,0 +1,98 @@
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  @media (min-width: $medium-screen) {
+    font-size: 15px;
+  }
+  @media (min-width: $large-screen) {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin: 0 0 1.3em;
+  line-height: 1.25;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $serif;
+//   font-size: $base-font-size;
+//   line-height: $heading-line-height;
+//   margin: 0 0 $small-spacing;
+// }
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: $my-serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {}
+
+h6 {}
+
+small, .font_small {
+  font-size: 0.833em;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

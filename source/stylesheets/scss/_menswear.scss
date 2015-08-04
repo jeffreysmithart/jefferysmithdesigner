@@ -1,0 +1,154 @@
+div.menswear {
+  background: $offwhite;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  blockquote {
+    font-size: 2rem;
+    @include crimson;
+    p {
+      font-size: 2rem;
+    }
+  }
+  .hover-text {
+    margin-top: 3rem;
+  }
+  .eclipse__img__wrapper {
+    padding-top: 1rem;
+    img {
+      max-width: 50%;
+      float: left;
+    }
+  }
+  .header__wrapper {
+    background-image: url("../img/menswear_sweater.jpg");
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  section#header__box {
+    overflow: auto;
+    text-align: center;
+    max-height: rem-calc(600);
+    min-height: rem-calc(400);
+    display: table;
+    .head__inner {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    img {
+      //display: block;
+      //margin: 6rem auto 4rem;
+      // margin-top: 6rem;
+      // margin-bottom: 4rem;
+   
+    }
+  }
+  #top.portfolio__item {
+    background: desaturate($green, 10);
+    color: $offwhite;
+    background-size: 100% auto;
+    h3 {
+      color: $offwhite;
+      font-size: 2rem;
+    }
+  }
+  .portfolio__item {
+    h3 {
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      font-size: 3rem;
+      @include zona--semibold;
+      color: $dark-blue;
+    }
+    .top {}
+    .portfolio__item__text {
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        @include open;
+      }
+    }
+    .portfolio__item__content {
+      @include open;
+      p {
+        font-size: 1.5rem;
+        font-weight: 300;
+        @include open;
+      }
+      img {
+        @include box-shadow;
+        border-radius: rem-calc(2);
+        display: block;
+        margin: 0 auto 1rem;
+      }
+      img.white-on-white {
+        border: 1px solid $super-light-gray;
+      }
+    }
+  }
+  .portfolio__item__img {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .ipad {
+    box-shadow: none !important;
+  }
+  .portfolio__item__button {
+    @include border-button(2rem, 1rem);
+    text-align: center;
+    font-size: 2rem;
+    a {
+      width: 85%;
+      display: inline-block;
+    }
+  }
+  .portfolio__img div.img__outer__wrapper {
+    max-width: rem-calc(610);
+  }
+  hr {
+    border: 1px solid lighten($light-purple, 30);
+    max-width: rem-calc(400);
+    margin: 1rem auto 1.1875rem;
+  }
+  .full-width {
+    width: 100%;
+    height: auto;
+  }
+  .color_wrapper {
+    width: 100%;
+    //background: $aura-blue;
+ 
+  }
+  .phone_wrapper {
+    @media #{$medium-up} {
+      margin-top: 36%;
+    }
+  }
+  .text {
+    p {
+      margin-bottom: 2.5rem;
+    }
+    img {
+      margin-bottom: 3rem !important;
+    }
+  }
+  .final {
+    margin-top: .8rem;
+  }
+  img.right-break {
+    float: right !important;
+    margin-bottom: 7rem;
+  }
+  .next {
+    background: darken($green, 20);
+    background: linear-gradient(45deg, $trans-teal 0%, $trans-teal 100%), url("../img/menswear_table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    p, h2, h4 {
+      color: $white;
+      @include text-shadow;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.blog {
+  .blog-listing, #head__box {
+    @include outer-container(1100px);
+  }
+  #head__box {
+    padding-top: rem-calc(80);
+  }
+}

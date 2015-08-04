@@ -1,0 +1,25 @@
+
+  <nav class="navbar">
+    <div class="navbar__inner">
+
+      <% link_to 'index.html' do %>
+        <%= image_tag 'js-logo-initial-white.svg',:class => 'logo-mark' , :alt => "Jeffrey Smith Designer" %>
+      <% end %>
+      <% if current_page.url === "/blog/" %>
+        <ul class="navbar__links">
+          <li><%= link_to 'Home', '../index.html' %></li>
+          <li><%= link_to 'portfolio', '../index.html#portfolio' %></li>
+          <li><%= link_to 'About', '/about.html' %></li>
+         <!--  <li><%= link_to 'Blog', 'blog/index.html' %></li> -->
+        </ul>
+      <% else %>
+
+        <ul class="navbar__links">
+          <li><%= link_to 'Home', './index.html' %></li>
+          <li><%= link_to 'portfolio', './index.html#portfolio' %></li>
+          <li><%= link_to 'About', '/about.html' %></li>
+         <!--  <li><%= link_to 'Blog', 'blog/index.html' %></li> -->
+        </ul>
+        <% end %>
+      </div>
+  </nav>

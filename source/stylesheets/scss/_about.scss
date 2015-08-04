@@ -1,0 +1,131 @@
+.about {}
+
+.about {
+  &__inner {
+    @include row;
+    @include outer-container(1100px);
+    padding: 4rem 1rem;
+  }
+  &__text {
+    @include span-columns(12);
+    p {
+      @include outer-container(680px);
+    }
+  }
+  &__connect {
+    background-color: $about-blue;
+    margin-top: rem-calc(20);
+    margin-bottom: rem-calc(40);
+    padding: rem-calc(20) rem-calc(40);
+    outline: 1px solid rgba($dark-blue, 0.8);
+    outline-offset: -5px;
+    &-inner {
+      @include outer-container(680px);
+      header {
+        margin-bottom: rem-calc(10);
+        h3 {
+          color: $dark-blue;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  #head__box {
+    background-color: $about-blue;
+    position: relative;
+    @media #{$medium-up} {
+      min-height: rem-calc(400);
+    }
+    .head__inner {
+      @include row;
+      @include outer-container(1100px);
+      padding-top: rem-calc(84);
+      padding-bottom: rem-calc(20);
+      .head__img {
+        text-align: center;
+        padding: 0 em(16);
+        @include span-columns(12);
+        @media (min-width: 768px) {
+          @include span-columns(6);
+        }
+        img {
+          max-width: 100%;
+          border-radius: 50%;
+          display: inline-block;
+          border: 5px solid transparent;
+          box-shadow: 0 0 0 2px $dark-blue;
+        }
+      }
+      .head__headline {
+        @include span-columns(12);
+        //padding: 4rem 1rem;
+        position: relative;
+        &:before {
+          content: " ";
+          display: inline-block;
+          height: 100%;
+          width: 1%;
+          vertical-align: middle;
+        }
+        h1 {
+          display: inline-block;
+          vertical-align: middle;
+          width: 95%;
+        }
+        @media (min-width: 768px) {
+          @include span-columns(6);
+          height: 511px;
+        }
+        h1, h4 {
+          color: $dark-blue;
+        }
+      }
+    }
+    h1 {
+      margin: 0;
+      &:first-of-type {
+        padding-top: 0;
+        margin-top: 0;
+      }
+      &:last-of-type {
+        //margin-left: rem-calc(18);
+        //margin-top: rem-calc(-12);
+        margin-bottom: 0;
+      }
+      @media only screen and (max-width: rem-calc(680)) {
+        font-size: rem-calc(40);
+      }
+    }
+    h4 {
+      font-size: 2.4rem;
+      @include zona--semibold;
+      margin-bottom: 0;
+      margin-left: rem-calc(18);
+      line-height: 1.2;
+      @media only screen and (max-width: rem-calc(680)) {
+        font-size: rem-calc(28);
+      }
+    }
+    @media #{$medium-up} {
+      background-size: contain;
+    }
+  }
+  #about__box {
+    background: $offwhite;
+    p {
+      font-size: 1.5rem;
+      @media #{$small-only} {
+        font-size: 1rem;
+      }
+    }
+    span {
+      font-size: 2.7rem;
+      margin-right: 2rem;
+      @include transition;
+      &:hover {
+        color: darken($blue, 20);
+        @include transition;
+      }
+    }
+  }
+}

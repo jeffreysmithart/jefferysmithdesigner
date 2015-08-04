@@ -1,0 +1,92 @@
+---
+title: Pastels
+page_class: 'pastels'
+---
+
+	<div class="header__wrapper">
+		<section id="header__box" class="portfolio__item__wrapper"> 
+			<article class="head__inner">
+				<%= image_tag 'pastel_logo.png', :alt => ' Jeffrey Smith Pastels' %>
+				
+			</article>
+		</section>
+	</div>
+		<section id="top" class="portfolio__item">
+			<div class="portfolio__item__wrapper">
+				<article class="portfolio__item__text">
+					<h3>A bold take on a<br /> colorful medium</h3>
+					<p>For this project, I focused on creating a site that centered around a single painting medium, pastel.</p>
+				</article>
+			</div>
+			
+		</section>
+		<section class="portfolio__item">
+			<div class="portfolio__item__wrapper">
+				<article class="portfolio__item__content">
+					<%= image_tag 'pastel_box.jpg', :alt => 'pastel | Jeffrey Smith' %>
+					
+					
+				</article>
+				<article class="portfolio__item__content">
+					<p>Pastel is a painting medium that is all about color and visual texture. To highlight that, I used full-width background images to show-off the surface quality of the paintings.</p> 
+					
+					
+				</article>
+
+			</div>
+			<%= image_tag 'pastel_background.jpg', :alt => 'pastel | Jeffrey Smith', :class => 'right-break' %>
+						
+		</section>
+	<div class="clearfix"></div>
+
+		<section class="portfolio__item switch">
+			<div class="portfolio__item__wrapper">
+				<article class="portfolio__item__content">
+					<div class="image__wrapper">
+						<%= image_tag 'pastel_cat_phone.jpg', :alt => 'logo pastel | Jeffrey Smith', :class => 'white-on-white' %>
+					
+					</div>
+					
+				</article>
+				<article class="portfolio__item__content text">
+					<p>The painting category pages feature a grid of thumbnails. Information about each painting is revealed on hover. The mobile version of the category page stacks the painting information on top of the thumbnail image.</p> 
+					<%= image_tag 'pastel_hover.jpg', :alt => 'logo iPhone | Jeffrey Smith', :class => 'show-for-small-only' %>
+					
+					<%= image_tag 'animation.gif', :alt => 'iPhone pastel | Jeffrey Smith', :class => 'show-for-medium-up' %>
+					<
+					<p>When laying out the page, I decided that I wanted to keep the aspect ratio of each painting as opposed to cropping square thumbnails.To keep the grid nice and orderly, I used jQuery to vertically and horizontally center the irregularity sized images. </p>
+
+				</article>
+			</div>				
+		</section>
+
+
+		<section class="portfolio__item">
+			
+			
+			<div class="color_wrapper">
+			<h3>The Result</h3>	
+			
+			</div>
+			<div class="portfolio__item__wrapper">
+				<blockquote>
+					<p>For the final version of the website, I  customized the Twitter Bootstrap Framework.</p>
+					<p>Jeffrey Smith Pastel makes use of a simple, custom CMS. The website is built dynamically  using PHP and a MySQL database to organize the original art work.</p> 	
+				</blockquote>
+			</div>
+			<%= image_tag 'pastels_responsive.jpg', :alt => ' pastel | Jeffrey Smith', :class => 'full-width' %>
+			
+			
+			<div class="portfolio__item__wrapper">
+				<p class="portfolio__item__button"><a href="http://jeffreysmithdesigner.com/pastels/" target="_blank">visit the site</a></p>
+			</div>
+						
+		</section>
+		<section class="next">
+			<% content_tag(:a, :href => '../menswear') do %>
+				<div class="portfolio__item__wrapper">
+					<p>up next:</p>
+					<h2>MN Menswear</h2>
+					
+				</div>
+			<% end %>

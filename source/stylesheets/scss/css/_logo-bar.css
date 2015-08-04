@@ -1,0 +1,7 @@
+#logo-bar {
+  max-height: rem-calc(75);
+  float: left; }
+  #logo-bar img {
+    margin-top: rem-calc(10);
+    margin-left: rem-calc(10);
+    max-height: 100%; }
