@@ -58,5 +58,15 @@
   .logo-mark {
     max-width: em(60);
     opacity: 0.6;
+    transition: max-width .2s;
   }
+}
+
+//Headroom
+.headroom--not-top {
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.12);
+  // .logo-mark {
+  //   max-width: em(40);
+  //   opacity: 0.4;
+  // }
 }

@@ -55,8 +55,14 @@ body {
 /* ========== front page portfolio column structure ========= */
 .home {
   section.portfolio {
-    &:nth-of-type(even) {
-      background: $white;
+    background-color: $offwhite;
+    // &:nth-of-type(even) {
+    //   background: $white;
+    // }
+    &:last-child {
+      .portfolio__wrapper {
+        margin-bottom: 0 !important;
+      }
     }
     &:nth-of-type(odd) {
       background-color: $offwhite;
@@ -72,6 +78,8 @@ body {
     .portfolio__wrapper {
       @include grid-row;
       padding: 4rem 1rem;
+      background-color: #fff;
+      margin-bottom: rem-calc(15px);
     }
     .portfolio__img {
       @include grid-column(12);

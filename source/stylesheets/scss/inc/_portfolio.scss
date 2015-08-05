@@ -78,6 +78,7 @@
     @include zona--regular;
     text-transform: uppercase;
     font-size: rem-calc(21);
+    margin-top: 0;
   }
   p {
     &:last-of-type {
