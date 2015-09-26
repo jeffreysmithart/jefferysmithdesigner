@@ -90,6 +90,8 @@
       @include zona--regular;
       color: $title-gray;
       margin-top: rem-calc(-10);
+      text-align: left;
+      display: inline-block;
       @media #{$medium-up} {
         font-size: rem-calc(48);
       }

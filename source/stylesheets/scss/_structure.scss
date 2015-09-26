@@ -54,16 +54,16 @@ body {
 
 /* ========== front page portfolio column structure ========= */
 .home {
+  #portfolio {
+    .portfolio__wrapper {
+      margin-top: rem-calc(25px);
+    }
+  }
   section.portfolio {
     background-color: $offwhite;
     // &:nth-of-type(even) {
     //   background: $white;
     // }
-    &:last-child {
-      .portfolio__wrapper {
-        margin-bottom: 0 !important;
-      }
-    }
     &:nth-of-type(odd) {
       background-color: $offwhite;
       @media #{$medium-up} {
@@ -79,7 +79,8 @@ body {
       @include grid-row;
       padding: 4rem 1rem;
       background-color: #fff;
-      margin-bottom: rem-calc(15px);
+      margin-bottom: rem-calc(25px);
+      box-shadow: 1px 1px 5px 1px rgba(black, 0.05);
     }
     .portfolio__img {
       @include grid-column(12);

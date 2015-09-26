@@ -94,6 +94,9 @@ configure :build do
   activate :directory_indexes
 
   # activate :critical, :binary => '/usr/local/bin/critical'
+  activate :minify_html
+  
+  activate :gzip
 
   # Or use a different image path
   # set :http_prefix, "/Content/img/"

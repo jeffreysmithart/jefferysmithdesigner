@@ -28,3 +28,5 @@ gem 'middleman-breadcrumbs'
 gem "middleman-critical", "~>0.0.2"
 
 gem 'liquid', '~> 3.0.6'
+
+gem "middleman-minify-html"
