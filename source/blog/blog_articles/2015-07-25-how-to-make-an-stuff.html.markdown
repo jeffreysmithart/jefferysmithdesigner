@@ -1,9 +1,11 @@
 ---
-title: How to Make an Article
+title: How to Make an Asston of Stuff
 date: 2015-07-25
+tags: example
 layout: article_layout
+featuredimage: eclipse_logoplay.jpg
 ---
 
-This is the second article in the blog_articles driectory.
+##I'm hoping this does show up as an h2!
 This is an article about how to make an article. You probably want to delete it and write your own articles!
 

@@ -4,6 +4,7 @@
 
 
   <body class="<%= page_classes %>">
+
     <%= partial "/layouts/partials/nav" %>
     <div class="<% if current_page.data.title %><%= current_page.data.title.downcase %><% end %>  content-wrapper">
       <%= yield %>

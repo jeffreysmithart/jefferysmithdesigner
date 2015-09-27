@@ -1,0 +1,11 @@
+.article-container {
+  @include outer-container(1000px);
+}
+
+.article-main-content {
+  @include span-columns(9);
+}
+
+.article-aside {
+  @incldue span-columns(3);
+}

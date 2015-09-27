@@ -3,11 +3,10 @@
 source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.12"
-
 gem 'middleman-blog', '~> 3.5.3'
-
+gem "redcarpet"
 gem 'zurb-foundation', '~> 4.3.2'
-
+gem "nokogiri"
 gem 'middleman-autoprefixer'
 
 # Live-reloading plugin
@@ -23,6 +22,9 @@ gem 'bitters'
 gem 'bourbon'
 gem 'neat'
 
+gem "middleman-syntax"
+
+gem "sitemap_generator"
 gem 'middleman-breadcrumbs'
 
 gem "middleman-critical", "~>0.0.2"

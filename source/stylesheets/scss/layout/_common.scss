@@ -1,0 +1,14 @@
+//Reuseable clayout sections
+.page-header-content {
+  @include outer-container(1000px);
+  padding: em(80) 0;
+}
+
+.page-header-wrapper {
+  width: 100%;
+  background-size: cover;
+}
+
+.page-header-image {
+  text-align: center;
+}

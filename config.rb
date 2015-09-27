@@ -11,6 +11,7 @@
 # Page options, layouts, aliases and proxies
 ###
 
+
 # Per-page layout changes:
 #
 # With no layout
@@ -19,6 +20,7 @@
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
 # page "blog/*", :layout => :blog_layout
+#page "blog/", :layout => :article_layout
 #
 # A path which all have the same layout
 # with_layout :admin do
@@ -34,7 +36,7 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+ activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -47,25 +49,47 @@ end
 #     "Helping"
 #   end
 # end
+
+
+
 activate :blog do |blog|
-  blog.prefix = "blog"
+  blog.prefix = "/blog/"
+
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 100
+
   blog.paginate = true
-  blog.per_page = 1
-  blog.permalink = ":year-:month-:day-:title"
-  blog.sources = "blog_articles/:title.html"
+  blog.per_page = 3
+  blog.page_link = "page/:num"
+
+  blog.tag_template = "/blog/tag.html"
+  blog.calendar_template = "/blog/calendar.html"
+
+  blog.permalink = ":year/:month/:day/:title.html"
+  blog.sources = "blog_articles/:year-:month-:day-:title.html"
+
+  #blog.layout = "article_layout"
+  # blog.sources = "blog_articles/:title.html"
 end
+
+page "/blog/feed.xml", :layout => false
 
 
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'js'
-
 set :images_dir, 'img'
 
 set :relative_links, true
 
 activate :directory_indexes
+
+
+
+# Enable syntax highlighting
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+activate :syntax
 
 activate :breadcrumbs
 
