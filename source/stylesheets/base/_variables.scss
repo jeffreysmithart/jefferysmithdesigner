@@ -1,8 +1,11 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
-$sans-serif: $helvetica;
-$my-serif: "ff-meta-serif-web-pro";
+$font-family-serif: "freight-text-pro", georgia, serif;
+$font-family-sans-serif: "freight-sans-pro", helvetica, arail, sans-serif;
+$font-family-headline: "freight-big-pro", "Times New Roman", serif;
+$base-font-family: $font-family-sans-serif;
+$heading-font-family: $font-family-serif;
+$sans-serif: $font-family-sans-serif;
+$my-serif: $font-family-headline;
 
 // Font Sizes
 $base-font-size: 1em;

@@ -1,0 +1,47 @@
+.logo {
+  height: auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.st0 {
+  fill: #F7F7F7;
+}
+
+.st1 {
+  display: none;
+}
+
+.st2 {
+  display: inline;
+  fill: #F7F7F7;
+}
+
+.fallback {
+  display: none;
+}
+
+.no-svg .fallback {
+  display: inline-block;
+  background-image: url("img/js-logo2.png");
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+}
+
+.navbar .logo {
+  height: 40px;
+  width: auto;
+  .effrey, .mith {
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  .s {
+    transition: all .3s;
+    transform: translate(0, 0) scale(1);
+  }
+  .j {
+    transition: all .3s;
+    transform: translateY(0) scale(1);
+  }
+}

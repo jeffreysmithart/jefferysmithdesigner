@@ -1,0 +1,10 @@
+.contact {
+  .header-inner {
+    @include row;
+  }
+  .head__img, .head__headline {
+    @media (min-width: 769px) {
+      @include span-columns(6);
+    }
+  }
+}

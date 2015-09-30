@@ -68,7 +68,7 @@
   ul {
     padding-left: em(20);
     li {
-      @include open;
+      font-family: $font-family-sans-serif;
     }
   }
   h2 {
@@ -85,7 +85,6 @@
       margin-top: 2rem;
     }
     &.skills {
-      @include open;
       margin-bottom: 0;
     }
   }

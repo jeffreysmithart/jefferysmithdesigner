@@ -1,11 +1,17 @@
 .article-container {
   @include outer-container(1000px);
+  @include row;
 }
 
 .article-main-content {
   @include span-columns(9);
+  @include shift(1.5 of 12);
 }
 
 .article-aside {
-  @incldue span-columns(3);
+  @include span-columns(9);
+  @include shift(1.5 of 12);
+  @include media(769px) {
+    border-top: 1px solid $gray;
+  }
 }

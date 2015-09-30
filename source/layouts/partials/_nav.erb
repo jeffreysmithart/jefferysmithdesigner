@@ -1,27 +1,22 @@
 
-  <nav class="navbar">
-    <div class="navbar__inner">
+<nav class="navbar">
+  <div class="navbar__inner">
 
-      <% link_to '/' do %>
-        <%= image_tag 'js-logo-initial-white.svg',:class => 'logo-mark' , :alt => "Jeffrey Smith Designer" %>
-      <% end %>
+    <% link_to '/' do %>
+    
+    <%= partial "/layouts/partials/logo" %>
+
+    <% end %>
 
 
-        <ul class="navbar__links blog">
-   
-          <li><%= link_to 'Home', '/' %></li>
-          <li><%= link_to 'portfolio', '/#portfolio' %></li>
-          <li><%= link_to 'About', '/about.html' %></li>
-          <li><%= link_to 'Blog', '/blog/' %></li>
-        </ul>
-  
+    <ul class="navbar__links blog">
 
-<!--         <ul class="navbar__links">
-          Damn it!
-          <li><%= link_to 'Home', './index.html' %></li>
-          <li><%= link_to 'portfolio', './index.html#portfolio' %></li>
-          <li><%= link_to 'About', '/about.html' %></li>
-         <li><%= link_to 'Blog', 'blog/index.html' %></li>
-        </ul> -->
-        </div>
-  </nav>
+      <li><%= link_to 'Home', '/' , :class=>"home-link"%></li>
+      <li><%= link_to 'portfolio', '/#portfolio' , :class=>"portfolio-link"%></li>
+      <li><%= link_to 'About', '/about.html' , :class=>"about-link"%></li>
+      <li><%= link_to 'Blog', '/blog/' , :class=>"blog-link"%></li>
+      <li><%= link_to 'Contact', '/contact/', :class=>"contact-link"%></li>
+    </ul>
+
+  </div>
+</nav>

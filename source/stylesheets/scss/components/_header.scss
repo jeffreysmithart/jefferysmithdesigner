@@ -1,0 +1,18 @@
+#header {
+  min-height: rem-calc(400);
+  position: relative;
+  z-index: 0;
+  background-color: $about-blue;
+  @include clearfix;
+  @media #{$medium-up} {
+    // height: calc(80vh + 60px);
+    //min-height: rem-calc(460);
+    //max-height: rem-calc(600);
+  }
+}
+
+.header-inner {
+  @include outer-container(1000px);
+  margin-top: em(160);
+  margin-bottom: em(100);
+}
