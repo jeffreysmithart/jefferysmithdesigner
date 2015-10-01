@@ -46,43 +46,6 @@ img {
       margin-top: rem-calc(25px);
     }
   }
-  section.portfolio {
-    background-color: $offwhite;
-    // &:nth-of-type(even) {
-    //   background: $white;
-    // }
-    &:nth-of-type(odd) {
-      background-color: $offwhite;
-      @media #{$medium-up} {
-        .portfolio__img {
-          @include grid-column($push: 6);
-        }
-        .portfolio__description {
-          @include grid-column($pull: 6);
-        }
-      }
-    }
-    .portfolio__wrapper {
-      @include grid-row;
-      padding: 4rem 1rem;
-      background-color: #fff;
-      margin-bottom: rem-calc(25px);
-      box-shadow: 1px 1px 5px 1px rgba(black, 0.05);
-    }
-    .portfolio__img {
-      @include grid-column(12);
-      margin-bottom: 2rem;
-      @media #{$medium-up} {
-        @include grid-column(6);
-      }
-    }
-    .portfolio__description {
-      @include grid-column(12);
-      @media #{$medium-up} {
-        @include grid-column(6);
-      }
-    }
-  }
 }
 
 /* ========== about page column structure ========= */

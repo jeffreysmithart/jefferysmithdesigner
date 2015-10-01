@@ -32,6 +32,7 @@
 .navbar .logo {
   height: 40px;
   width: auto;
+  transition: opacity .3s;
   .effrey, .mith {
     opacity: 1;
     transition: opacity .3s;
@@ -44,4 +45,8 @@
     transition: all .3s;
     transform: translateY(0) scale(1);
   }
+}
+
+.index {
+  .navbar .logo {}
 }
