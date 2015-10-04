@@ -1,0 +1,48 @@
+---
+title: Thank-You
+page_classe: 'thank-you'
+headercolor: 29A58D
+---
+<section id="header" <% if current_page.data.headercolor %>
+        style="background-color:#<%= current_page.data.headercolor %>;"
+    <% end %>>
+	<section class="header-inner">
+		<article class="head__img js-height">
+			<%= image_tag 'jeffrey-square.jpg' %>
+		</article>
+		<article class="head__headline js-height">
+			<h1>Hello there.<br />
+			I'm Jeffrey Smith &mdash;<br />
+			a front-end web developer<br / class="show-for-medium-only"> with a love for <br / class="show-for-large-up">design.</h1>
+		</article>
+		
+	</section>
+	
+</section>
+
+<section id="about__box">
+	<div class="constrain main-content">
+		<article class="about__text">
+			
+			<form accept-charset="UTF-8" action="https://formkeep.com/f/84e6d81e8d84" method="POST">
+			  <input type="hidden" name="utf8" value="✓">
+			  <input type="email" name="email" placeholder="Your Email">
+				<input type="text" name="name" placeholder="Your Name">
+				<textarea  name="textarea" placeholder="Your Comment"></textarea>
+			  <button type="submit">Submit</button>
+			</form>
+			<div class="about__connect">
+				<div class="about__connect-inner">
+					<header>
+						<h3>Connect with me</h3>
+					</header>
+					<p class="icon__wrapper">
+						<a href="https://www.linkedin.com/in/jeffreysmith9" target="_blank"><span class="icon-linkedin"></span></a>
+						<a href="https://twitter.com/jeffreysmithart" target="_blank"><span class="icon-twitter"></span></a>
+						<a href="mailto:jeffrey@jeffreysmithdesigner.com"><span class="icon-envelope"></span></a>
+					</p>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
