@@ -3,8 +3,6 @@
 .about {
   &__inner {
     @include row;
-    @include outer-container(1100px);
-    padding: 4rem 1rem;
   }
   &__text {
     @include span-columns(12);
@@ -16,11 +14,13 @@
     background-color: $about-blue;
     margin-top: rem-calc(20);
     margin-bottom: rem-calc(40);
-    padding: rem-calc(20) rem-calc(40);
+    padding: rem-calc(20) 0;
     outline: 1px solid rgba($dark-blue, 0.8);
     outline-offset: -5px;
+    @include row;
     &-inner {
-      @include outer-container(680px);
+      @include span-columns(8);
+      @include shift(2);
       header {
         margin-bottom: rem-calc(10);
         h3 {
@@ -30,7 +30,7 @@
       }
     }
   }
-  #head__box {
+  #header {
     background-color: $about-blue;
     position: relative;
     @media #{$medium-up} {
@@ -38,9 +38,6 @@
     }
     .head__inner {
       @include row;
-      @include outer-container(1100px);
-      padding-top: rem-calc(84);
-      padding-bottom: rem-calc(20);
       .head__img {
         text-align: center;
         padding: 0 em(16);

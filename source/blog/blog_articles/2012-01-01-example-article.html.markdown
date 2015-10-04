@@ -5,6 +5,7 @@ tags: example
 layout: article_layout
 category: HTML5
 featuredimage: aura_cards.jpg
+headercolor: C3D0BC
 ---
 
 

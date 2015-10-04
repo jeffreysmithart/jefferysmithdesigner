@@ -1,8 +1,11 @@
 ---
 title: About
 page_classe: 'about'
+headercolor: E0E9ED
 ---
-<section id="head__box">
+<section id="header"  <% if current_page.data.headercolor %>
+	style="background-color:#<%= current_page.data.headercolor %>;"
+	<% end %>>
 	<section class="head__inner">
 		<article class="head__img js-height">
 			<%= image_tag 'jeffrey-square.jpg' %>
@@ -16,16 +19,18 @@ page_classe: 'about'
 	</section>
 	
 </section>
-<!-- <div><%= breadcrumbs(current_page) %></div> -->
 <section id="about__box">
-	<div class="about__inner">
-		<article class="about__text">
+	<div class="about__inner constrain row">
+		<article class="about__text text-block">
 			
 			<h2>I believe a good website comes as the result of good planning.</h2>
 			<p> I think <em>really</em> good planning occurs when the design and development process are integrated and complement each other.</p>
 			<p>I have a passion for learning and problem solving. I think it's my innate curiosity that drives me to try and understand how web technologies work, or why a layout is successful.</p>
 			<p>I come from a background as a classically trained painter. With that comes a love of technical craft. From a work of art to a snippet of code, I think <em>how</em> something is constructed contributes to its meaning, and amplies its functionality.</p>
 			<p>I am a graduate from MCTC’s web and interactive media program. I am always looking for new challenges and excited to continue to learn as part of a dynamic team.</p>
+			
+		</article>
+		<article class="full-width">
 			<div class="about__connect">
 				<div class="about__connect-inner">
 					<header>

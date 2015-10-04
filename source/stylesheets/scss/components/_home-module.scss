@@ -5,9 +5,3 @@
   maring-bottom: em(25);
   box-shadow: 1px 1px 5px 1px rgba(black, 0.05);
 }
-
-.home__about {
-  @include outer-container(1000px);
-  @extend %home-module;
-  margin-top: em(25);
-}

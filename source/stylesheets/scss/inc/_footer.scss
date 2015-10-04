@@ -5,7 +5,6 @@ footer {
   bottom: 0;
   z-index: 0;
   width: 100%;
-  //transform:translateZ(1px);
   h4 {
     color: $white;
     margin-top: 0;
@@ -19,6 +18,7 @@ footer {
       text-align: center;
       a {
         padding: 1rem;
+        font-family: $font-family-serif;
         color: $white;
         display: block;
         margin-left: auto;
@@ -27,17 +27,15 @@ footer {
         border: 2px solid darken($light-gray, 25);
         border-radius: rem-calc(5);
         @include transition;
-        @include zona--regular;
         &:hover {
           background: $light-gray;
           border: 2px solid $light-gray;
-          @include transition;
           color: $gray;
         }
       }
     }
   }
-  p.copy {
+  .copy {
     text-align: center;
     color: darken($white, 30);
     margin-bottom: 0;
@@ -46,5 +44,26 @@ footer {
   span {
     font-size: rem-calc(20);
     margin-right: rem-calc(8);
+  }
+  .navbar__links {
+    float: none;
+    display: inline-block;
+    a {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.footer__wrapper {
+  @include row;
+  @include outer-container(1000px);
+  text-align: center;
+  .footer__content {
+    @include span-columns(12);
+    @media (min-width: $screen-sm) {
+      @include span-columns(6);
+    }
   }
 }

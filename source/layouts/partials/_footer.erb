@@ -1,5 +1,6 @@
     <footer>
-      <div class="footer__wrapper">
+      <section class="footer__wrapper">
+        
         <article class="footer__content">
           <p><a href="mailto:jeffrey@jeffreysmithdesigner.com"><span class=" icon-envelope"></span>Get in touch</a><p>
           
@@ -9,41 +10,15 @@
           <p><% link_to 'smithJeffreyResume.pdf' do %><span class="icon-download"></span>Download my r&eacute;sum&eacute;<% end %></p>
         </article>
         
-      </div>
-      <div class="footer__wrapper">
+      </section>
+      <section class="footer__wrapper">
+        <%= partial "/layouts/partials/menu" %>
+      </section>
+      <section class="footer__wrapper">
         <p class="copy">Jeffrey Smith Designer &copy; <%= Time.now.year %></p>
-      </div>
+      </section>
     </footer>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
   <%= javascript_include_tag  "jquery.min","all", "app","headroom" %>
  
-
-
-
-<script>
-// var menuButton = document.getElementById('menuButton');
-// menuButton.addEventListener('click', function (e) {
-//     menuButton.classList.toggle('is-active');
-//     e.preventDefault();
-// });
-
-// var menuBox = document.getElementById('menuBox');
-// menuButton.addEventListener('click', function() { 
-//   menuBox.classList.toggle('active');
-
-// });
-
-
-
-// var menuText = document.getElementById("menuBoxP");
-// menuButton.addEventListener('click', function() {
-//   if (menuText.getAttribute("data-text-swap") == menuText.innerHTML) {
-//     menuText.innerHTML = menuText.getAttribute("data-text-original");
-//   } else {
-//     menuText.setAttribute("data-text-original", menuText.innerHTML);
-//     menuText.innerHTML = menuText.getAttribute("data-text-swap");
-//   }
-// }, false);
-
-</script>

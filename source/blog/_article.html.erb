@@ -1,14 +1,19 @@
 <% if digest %>
 <h1>Blog</h1>
 <% else %>
-<section class="article-header page-header-wrapper">
-  <div class="page-header-content">
+
+
+<section class="article-header page-header-wrapper" >
+  <div class="page-header-content" <% if current_page.data.headercolor %>
+        style="background-color:#<%= current_page.data.headercolor %>;"
+    <% end %>
+    >
     <% if current_page.data.featuredimage %>
       <div class="page-header-image">
         <%= image_tag current_page.data.featuredimage %>
       </div>
     <% end %>
-    <%= article.title %>
+    <h1><%= article.title %></h1>
   </div>
 </section>
 <% end %>
@@ -34,6 +39,7 @@
     <% end %>
 
     <% unless digest %>
+    <h3>Next Up:</h3>
       <ul class="read_next">
         <li><%= article.previous_article ? link_to("<i class='icon-caret-left'></i> #{article.previous_article.title}", article.previous_article) : "&nbsp;" %></li>
         <li><%= article.next_article ? link_to("#{article.next_article.title} <i class='icon-caret-right'></i>", article.next_article) : "&nbsp;" %></li>
@@ -42,16 +48,19 @@
 
     <% end %>
   </article>
+  <% unless digest %>
   <aside class="article-aside">
-    <h3>Recent Articles</h3>
+    <h3>Credits</h3>
     <ul class="credit">
       <li class="time">Posted on <time datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%A %b %e, %Y') %></time></li>
     </ul>
+    <h3>Tags</h3>
     <ul class="tags">
       <% article.tags.each do |tag| %>
         <li><%= link_to tag, tag_path(tag), :class => 'tiny button secondary round' %></li>
       <% end %>
     </ul>
   </aside>
+  <% end %>
 </div>
 

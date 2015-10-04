@@ -1,6 +1,5 @@
 ---
 pageable: true
-per_page: 1
 ---
 <section id="head__box">
   <section class="head__inner">
@@ -20,13 +19,17 @@ per_page: 1
 <section class="blog-listing">
 
 
-<% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <br><span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.summary %>
-  <%= link_to "Read More", article %>
-<% end %>
+<div class="articles">
+  <% page_articles.each_with_index do |article, i| %>
+    <% if i > 0 %>
+      <hr />
+    <% end %>
+    <%= partial '/blog/article', :locals => {:article => article, :digest => true} %>
+  <% end %>
+</div>
+
+
+
 <% if paginate && num_pages > 1 %>
   <p>Page <%= page_number %> of <%= num_pages %></p>
 

@@ -2,7 +2,8 @@
   min-height: rem-calc(400);
   position: relative;
   z-index: 0;
-  background-color: $about-blue;
+  background-color: #102C5A;
+  @include outer-container(1200px);
   @include clearfix;
   @media #{$medium-up} {
     // height: calc(80vh + 60px);
@@ -11,8 +12,26 @@
   }
 }
 
-.header-inner {
+.header-inner, .head__inner {
   @include outer-container(1000px);
   margin-top: em(160);
   margin-bottom: em(100);
+}
+
+.head__img {
+  @include span-columns(12);
+  @media (min-width: 768px) {
+    @include span-columns(6);
+  }
+}
+
+.head__headline {
+  @include span-columns(12);
+  @media (min-width: 768px) {
+    @include span-columns(6);
+  }
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

@@ -223,16 +223,6 @@ img {
   display: table;
 }
 
-.footer__wrapper {
-  @include grid-row;
-  .footer__content {
-    @include grid-column(12);
-    @media #{$medium-up} {
-      @include grid-column(6);
-    }
-  }
-}
-
 .header__wrapper {
   max-height: 100vh;
 }

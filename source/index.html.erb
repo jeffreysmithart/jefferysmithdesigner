@@ -1,11 +1,14 @@
 ---
 title: Home 
 page_class: 'home'
+headercolor: 102C5A
 ---
 
 
 		
-		<section id="header">
+		<section id="header" <% if current_page.data.headercolor %>
+        style="background-color:#<%= current_page.data.headercolor %>;"
+    <% end %>>
 			<div class="color-block green"></div>
 			<div class="color-block blue"></div>
 			<div class="title__box">
@@ -17,188 +20,20 @@ page_class: 'home'
 				<h3 class="sub-head">Front-end<br>Developer &amp;<br>Web Designer</h3>
 			</div>
 		</section>
-		<section class="home__about">
+
+		<section class="home__about row">
 			<article class="home__about-img">
+				<%= image_tag 'jeffrey-square.jpg' %> 
 			</article>
 			<article class="home__about-text">
-				<div class="btn-primary">
-					<%= link_to 'Learn more', '/about/' %>
+				<div class="">
+					<%= link_to 'Learn more', '/about/', :class=>'btn-primary btn' %>
 				</div>
 			</article>
 		</section>
-		<section class="portfolio" id="portfolio">
-			<div class="portfolio__wrapper">
-				<h2 class="portfolio__headline">Eclipse | MCTC 2014 Fashion Event</h2>
-				<article class="portfolio__img">
-					<div class="img__outer__wrapper">
 
-						<div class="browser">
-							<div class="indicators">
-								<span class="circle"></span>
-								<span class="circle"></span>
-								<span class="circle"></span>
-							</div>
-							<div class="img__url__bar"></div>
-						</div>
-						<div class="img__inner__wrapper">
-							<% link_to "eclipse.html" do %><img src="img/eclipse_home_full.jpg" alt="Jeffrey Smith"><% end %>
-						</div>
-					</div>
-				</article>
-				<article class="portfolio__description">
-					
-					<h3>Designer &#8226; Developer</h3>
-					<p>Eclipse is the theme for the 2014 MCTC Apparel Technologies spring fashion show. The process began with a single word, eclipse. Print designer,  Rhia Brutger, and I were tasked with the challenge of building eclipse from a vauge concept and general feeling into a full campaign to support the spring fashion event.</p> 
-					<p class="skills">For this project, I used:</p>
-					<ul>
-						<li>PHP</li>
-						<li>Custom jQuery/Javascript</li>
-						<li>Sass</li>
-					</ul>
-
-					<p class="button-group"><%= link_to 'More about this project', 'eclipse.html' %><a href="http://eclipse.mctcapparelportfolio.com/">View the site</a></p>
-				</article>
-			</div>
-		</section>
-		<section class="portfolio">
-			<div class="portfolio__wrapper">
-				<h2 class="portfolio__headline">Aura | MCTC 2014 Photo Portfolio Show</h2>
-				<article class="portfolio__img">
-					<div class="img__outer__wrapper">
-
-						<div class="browser">
-							<div class="indicators">
-								<span class="circle"></span>
-								<span class="circle"></span>
-								<span class="circle"></span>
-							</div>
-							<div class="img__url__bar"></div>
-						</div>
-						<div class="img__inner__wrapper">
-							<% link_to "aura.html" do %><img src="img/aura_home_full.jpg" alt="Jeffrey Smith"><% end %>
-						</div>
-					</div>
-				</article>
-				<article class="portfolio__description">
-					
-					<h3>Designer &#8226; Developer</h3>
-					<p>AURA is the MCTC 2014 Photography and Digital Imaging portfolio show. This project was a creative collaboration between print designer, Rhia Brutger, and myself. Her logo design was the starting point as I began developing my concept for the web site.  I sought to develop a site that was cohesive with the rest of the branding efforts and would allow the photographer's work to stand out.</p>
-					<p class="skills">For this project, I used:</p>
-					<ul>
-						<li>PHP</li>
-						<li>Custom jQuery/Javascript</li>
-						<li>Foundation Framework</li>
-						<li>Sass</li>
-					</ul>
-
-
-					<p class="button-group"><%= link_to 'More about this project', 'aura.html' %><a href="http://aura.mctcphotoportfolioshow.com/">View the site</a></p>
-				</article>
-			</div>
-		</section>
-
-		<section class="portfolio">
-			<div class="portfolio__wrapper">
-				<h2 class="portfolio__headline">MN Menswear</h2>
-				<article class="portfolio__img">
-					<div class="img__outer__wrapper">
-
-						<div class="browser">
-							<div class="indicators">
-								<span class="circle"></span>
-								<span class="circle"></span>
-								<span class="circle"></span>
-							</div>
-							<div class="img__url__bar"></div>
-						</div>
-						<div class="img__inner__wrapper">
-							<% link_to "menswear.html" do %><img src="img/menswear_home_full.jpg" alt="Jeffrey Smith"><% end %>
-						</div>
-					</div>
-				</article>
-				<article class="portfolio__description">
-					
-					<h3>Designer &#8226; Developer</h3>
-					<p>MN Menswear is an informational site taking an independent look at shopping for men's clothing in Minnesota. The site lists out local stores organized into categories based on how you'd wear the clothes. </p> 
-					<p class="skills">For this project, I used:</p>
-					<ul>
-						<li>PHP</li>
-						<li>Custom jQuery/Javascript</li>
-						<li>Bootstrap Framework</li>
-						<li>Sass</li>
-					</ul>
-
-
-					<p class="button-group"><%= link_to 'More about this project', 'menswear.html' %><a href="http://jeffreysmithdesigner.com/menswear/">View the site</a></p>
-				</article>
-			</div>
-		</section>
-		<section class="portfolio">
-			<div class="portfolio__wrapper">
-				<h2 class="portfolio__headline">Real Deal Chocolate</h2>
-				<article class="portfolio__img">
-					<div class="img__outer__wrapper">
-						<div class="browser">
-							<div class="indicators">
-								<span class="circle"></span>
-								<span class="circle"></span>
-								<span class="circle"></span>
-							</div>
-						
-								<div class="img__url__bar"></div>
-							
-						</div>
-						<div class="img__inner__wrapper">
-							<a href="http://jeffreysmithdesigner.com/wordpress/"><img src="img/chocolate_home_full.jpg" alt="Jeffrey Smith"></a>
-						</div>
-					</div>
-				</article>
-				<article class="portfolio__description">
-					
-					<h3>Developer</h3>
-					<p>Real Deal is a Minneapolis duo passionate about creating the best handmade, natural & organic chocolates. Their creations are infused with a variety of healing herbs, teas, and spices.</p>
-					<p class="skills">For this project, I used:</p>
-					<ul>
-						<li>PHP</li>
-						<li>Custom jQuery/Javascript</li>
-						<li>Wordpress</li>
-						<li>Sass</li>
-					</ul>
-					<p><a href="http://jeffreysmithdesigner.com/wordpress/">view the site</a></p>
-				</article>
-			</div>
-		</section>
-		<section class="portfolio">
-			<div class="portfolio__wrapper">
-				<h2 class="portfolio__headline">Jeffrey Smith Pastels</h2>
-				<article class="portfolio__img">
-					<div class="img__outer__wrapper">
-
-						<div class="browser">
-							<div class="indicators">
-								<span class="circle"></span>
-								<span class="circle"></span>
-								<span class="circle"></span>
-							</div>
-							<div class="img__url__bar"></div>
-						</div>
-						<div class="img__inner__wrapper">
-							<% link_to "pastels.html" do %><img src="img/pastel_home_full.jpg" alt="Jeffrey Smith"><% end %>
-						</div>
-					</div>
-				</article>
-				<article class="portfolio__description">
-					
-					<h3>Designer &#8226; Developer</h3>
-					<p>The focus for this project was to create a site that celebrates  a single painting medium, pastel. Bold colors are combined with bold typography and a custom CMS</p>
-					<p class="skills">For this project, I used:</p>
-					<ul>
-						<li>PHP</li>
-						<li>Custom jQuery/Javascript</li>
-						<li>Bootstrap Framework</li>
-						<li>Sass</li>
-					</ul>
-					<p class="button-group"><%= link_to 'More about this project', 'pastels.html' %><a href="http://jeffreysmithdesigner.com/pastels/">View the site</a></p>
-				</article>
-			</div>
-		</section>
+<%= partial "/portfolio/partials/eclipse-port" %>
+<%= partial "/portfolio/partials/aura-port" %>
+<%= partial "/portfolio/partials/menswear-port" %>	
+<%= partial "/portfolio/partials/coco-port" %>
+<%= partial "/portfolio/partials/pastels-port" %>		

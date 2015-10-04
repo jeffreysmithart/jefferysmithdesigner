@@ -3,13 +3,20 @@
 <%= partial "/layouts/partials/head" %>
 
 
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>   
+  	<% if current_page.data.headercolor %>
+	    	<% xColor =  current_page.data.headercolor %>
+		    <% xColorVal = Integer(xColor,16) %>
+				<%  if xColorVal > 8388607 %>light<% else %>dark<% end %>
+        <% else %>
+        light
+			<% end %>">
 
     <%= partial "/layouts/partials/nav" %>
     <div class="<% if current_page.data.title %><%= current_page.data.title.downcase %><% end %>  content-wrapper">
+
       <%= yield %>
-    
-        
+
   </div>  
 <%= partial "/layouts/partials/footer" %>
 

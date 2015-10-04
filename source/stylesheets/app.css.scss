@@ -3,7 +3,8 @@
 //@import "scss/reset";
 @import "scss/variables";
 @import "scss/settings";
-@import "scss/inc/fonts";
+
+// @import "scss/inc/fonts";
 @import "scss/inc/icon-fonts";
 @import "scss/mixins";
 
@@ -34,5 +35,6 @@
 @import "scss/layout/contact";
 
 @import "scss/components/logo";
+@import "scss/components/buttons";
 @import "scss/components/header";
 @import "scss/components/home-module";

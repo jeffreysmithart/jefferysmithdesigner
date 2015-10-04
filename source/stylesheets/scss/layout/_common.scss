@@ -1,4 +1,12 @@
-//Reuseable clayout sections
+.dark {
+  color: white;
+}
+
+.light {
+  color: $gray;
+}
+
+//Reuseable layout sections
 .page-header-content {
   @include outer-container(1000px);
   padding: em(80) 0;
@@ -11,4 +19,26 @@
 
 .page-header-image {
   text-align: center;
+}
+
+.constrain {
+  @include outer-container(1000px);
+}
+
+.main-content {
+  padding: 4rem 0;
+}
+
+.row {
+  @include row;
+}
+
+//text layouts
+.text-block {
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.full-width {
+  @include span-columns(12);
 }

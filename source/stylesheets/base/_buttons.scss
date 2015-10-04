@@ -1,5 +1,5 @@
 #{$all-button-inputs},
-button {
+button, .btn {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
@@ -8,24 +8,40 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $font-family-serif;
   font-size: $base-font-size;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
+  text-transform: capitalize;
   &:hover,
   &:focus {
     background-color: darken($action-color, 15%);
     color: #fff;
   }
-
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+}
+
+%a-links {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  border: 2px solid $green;
+  border-radius: 0;
+  font-family: $font-family-serif;
+  letter-spacing: .5px;
+  dislpay: inline-block;
+  color: darken($green, 15);
+  @include transition;
+  &:hover {
+    background: $green;
+    color: $white;
+    @include transition;
   }
 }

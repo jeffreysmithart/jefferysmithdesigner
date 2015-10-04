@@ -1,5 +1,6 @@
 .portfolio {
   background-color: $offwhite;
+  color: $gray;
   // &:nth-of-type(even) {
   //   background: $white;
   // }
@@ -113,6 +114,11 @@
   margin: 0 0 em(20, 36);
   border-bottom: 1px solid currentColor;
   padding-bottom: em(10, 36);
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -ms-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 .portfolio__description {
@@ -127,6 +133,8 @@
     font-size: rem-calc(21);
     margin-top: 0;
     font-family: $font-family-sans-serif;
+    color: $dirty-gray;
+    letter-spacing: 1px;
   }
   p {
     &:last-of-type {
@@ -134,22 +142,6 @@
     }
     &.skills {
       margin-bottom: 0;
-    }
-  }
-  a {
-    margin-top: 1rem;
-    padding: .5rem 1rem;
-    border: 2px solid $green;
-    border-radius: rem-calc(5);
-    font-family: $font-family-serif;
-    letter-spacing: .5px;
-    dislpay: inline-block;
-    color: darken($green, 15);
-    @include transition;
-    &:hover {
-      background: $green;
-      color: $white;
-      @include transition;
     }
   }
 }

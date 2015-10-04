@@ -2,10 +2,11 @@
   height: auto;
   width: 80%;
   max-width: 400px;
+  margin-left: em(5);
 }
 
 .st0 {
-  fill: #F7F7F7;
+  fill: currentColor;
 }
 
 .st1 {
@@ -14,7 +15,7 @@
 
 .st2 {
   display: inline;
-  fill: #F7F7F7;
+  fill: currentColor;
 }
 
 .fallback {
@@ -23,10 +24,13 @@
 
 .no-svg .fallback {
   display: inline-block;
-  background-image: url("img/js-logo2.png");
+  background-image: url("../img/js-logo2.png");
   width: 100%;
   max-width: 400px;
-  height: 400px;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .navbar .logo {

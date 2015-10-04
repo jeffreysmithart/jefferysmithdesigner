@@ -1,31 +1,34 @@
 ---
 title: Contact
 page_classe: 'contact'
+headercolor: CA9F9F
 ---
-<section id="header">
-	<section class="header-inner">
+<section id="header" <% if current_page.data.headercolor %>
+        style="background-color:#<%= current_page.data.headercolor %>;"
+    <% end %>>
+	<section class="header-inner row">
 		<article class="head__img js-height">
 			<%= image_tag 'jeffrey-square.jpg' %>
 		</article>
 		<article class="head__headline js-height">
-			<h1>Hello there.<br />
-			I'm Jeffrey Smith &mdash;<br />
-			a front-end web developer<br / class="show-for-medium-only"> with a love for <br / class="show-for-large-up">design.</h1>
+			<h1>Contact me</h1>
 		</article>
 		
 	</section>
 	
 </section>
-<!-- <div><%= breadcrumbs(current_page) %></div> -->
+
 <section id="about__box">
-	<div class="about__inner">
+	<div class="constrain main-content">
 		<article class="about__text">
 			
-			<h2>I believe a good website comes as the result of good planning.</h2>
-			<p> I think <em>really</em> good planning occurs when the design and development process are integrated and complement each other.</p>
-			<p>I have a passion for learning and problem solving. I think it's my innate curiosity that drives me to try and understand how web technologies work, or why a layout is successful.</p>
-			<p>I come from a background as a classically trained painter. With that comes a love of technical craft. From a work of art to a snippet of code, I think <em>how</em> something is constructed contributes to its meaning, and amplies its functionality.</p>
-			<p>I am a graduate from MCTC’s web and interactive media program. I am always looking for new challenges and excited to continue to learn as part of a dynamic team.</p>
+			<form accept-charset="UTF-8" action="https://formkeep.com/f/84e6d81e8d84" method="POST">
+			  <input type="hidden" name="utf8" value="✓">
+			  <input type="email" name="email" placeholder="Your Email">
+				<input type="text" name="name" placeholder="Your Name">
+				<textarea  name="textarea" placeholder="Your Comment"></textarea>
+			  <button type="submit" class="btn-primary">Submit</button>
+			</form>
 			<div class="about__connect">
 				<div class="about__connect-inner">
 					<header>
