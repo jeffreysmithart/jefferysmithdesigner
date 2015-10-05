@@ -118,7 +118,7 @@ configure :build do
   activate :directory_indexes
 
   # activate :critical, :binary => '/usr/local/bin/critical'
-  activate :minify_html
+  activate :minify_html, remove_input_attributes: false
   
   activate :gzip
 
