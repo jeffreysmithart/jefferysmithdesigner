@@ -7,4 +7,13 @@
       @include span-columns(6);
     }
   }
+  .text-box {
+    a {
+      color: lighten($blue, 10%);
+      border-bottom: 1px solid currentColor;
+      &:hover, &:focus {
+        color: $blue;
+      }
+    }
+  }
 }
