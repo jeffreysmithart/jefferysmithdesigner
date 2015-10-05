@@ -54,7 +54,7 @@
       margin: 0 auto;
     }
     .img__url__bar {
-      background: darken($super-light-gray, 5);
+      background: darken($super-light-gray, 1%);
       height: rem-calc(15);
       margin-top: rem-calc(-10);
       margin-bottom: rem-calc(10);
@@ -137,6 +137,7 @@
     letter-spacing: 1px;
   }
   p {
+    font-size: 1.25em;
     &:last-of-type {
       margin-top: 2rem;
     }

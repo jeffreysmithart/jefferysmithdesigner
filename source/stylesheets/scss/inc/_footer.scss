@@ -25,7 +25,7 @@ footer {
         margin-right: auto;
         width: 85%;
         border: 2px solid darken($light-gray, 25);
-        border-radius: rem-calc(5);
+        border-radius: 2px;
         @include transition;
         &:hover {
           background: $light-gray;
@@ -49,6 +49,7 @@ footer {
     float: none;
     display: inline-block;
     a {
+      color: $light-gray;
       &:after {
         display: none;
       }

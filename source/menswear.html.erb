@@ -1,9 +1,12 @@
 ---
 title: Menswear
 page_class: 'menswear'
+headercolor: E0E9ED
 ---
 
-	<div class="header__wrapper">
+	<div class="header__wrapper" <% if current_page.data.headercolor %>
+	style="background-color:#<%= current_page.data.headercolor %>;"
+	<% end %>>
 		<section id="header__box" class="portfolio__item__wrapper"> 
 				<article class="head__inner">
 					<%= image_tag 'menswear_logo.png', :alt => 'MN Menswear' %>

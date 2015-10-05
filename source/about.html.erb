@@ -7,10 +7,8 @@ headercolor: E0E9ED
 	style="background-color:#<%= current_page.data.headercolor %>;"
 	<% end %>>
 	<section class="head__inner">
-		<article class="head__img js-height">
-			<%= image_tag 'jeffrey-square.jpg' %>
-		</article>
-		<article class="head__headline js-height">
+		<article class="head__content ">
+			<%= image_tag 'jeffrey-about.jpg', :alt=>'Jeffrey Smith' %>
 			<h1>Hello there.<br />
 			I'm Jeffrey Smith &mdash;<br />
 			a front-end web developer<br / class="show-for-medium-only"> with a love for <br / class="show-for-large-up">design.</h1>
@@ -21,20 +19,61 @@ headercolor: E0E9ED
 </section>
 <section id="about__box">
 	<div class="about__inner constrain row">
-		<article class="about__text text-block">
+		<article class="about__text text-block main-content">
+			<p>I first started experimenting with HTML and CSS about 15 years ago. I learned by clicking around in Macromedia's Dreamweaver 4 and seeing what changed. Today, I lead the development team at Media Junction in Saint Paul, MN.</p>
+			<p>I spent a lot of years in retail and logistic management. That gave me a passion for business, strategy and organization. I also learned that a good idea can come from anyone on a team.</p>
+			<p>Coming also from a background in fine arts means that I have a love for beauty, good design, and an attention to detail.</p>
+			<p>As a developer at an agency, I'm often in situations where I have to explain complex concepts to a varied audience. The years that I spent teach painting at The Atelier in NE Minneapolis, working one on one with other artists, taught me how to communicate clearly with other people about very abstract, complicated concepts.</p>
 			
-			<h2>I believe a good website comes as the result of good planning.</h2>
-			<p> I think <em>really</em> good planning occurs when the design and development process are integrated and complement each other.</p>
-			<p>I have a passion for learning and problem solving. I think it's my innate curiosity that drives me to try and understand how web technologies work, or why a layout is successful.</p>
-			<p>I come from a background as a classically trained painter. With that comes a love of technical craft. From a work of art to a snippet of code, I think <em>how</em> something is constructed contributes to its meaning, and amplies its functionality.</p>
-			<p>I am a graduate from MCTC’s web and interactive media program. I am always looking for new challenges and excited to continue to learn as part of a dynamic team.</p>
+			<figure class="image-stretch">
+				<%= image_tag 'jeffrey-and-albert-2.jpg', :alt=>"Jeffrey and Albert" %>
+				<figcaption>
+				Jeffrey and Albert
+				</figcaption>
+			</figure>
+			<p>When not deep in the Chrome dev inspector tools at my computer, I spend my time with my 113lb yellow lab named Albert. He loves coming with me wherever I'm going, begging for food, and taking trips to the park.</p>
+
+			
+			<div class="call-out" id="tools">
+				<h2>Technology</h2>
+				<ul>
+					<li>WordPress</li>
+					<li>HubSpot COS</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>CSS Preprocessors: LESS, Sass</li>
+					<li>JavaScript</li>
+					<li>JQuery</li>
+					<li>Gulp</li>
+					<li>PHP</li>
+					<li>HTML Email</li>
+					<li>Static site generators: Jekyll, Middleman</li>
+					<li>GIT</li>
+
+				</ul>
+			</div>
+			<p>A member of the HubSpot COS Advisory Board, I love learning about new technologies and solving problems for the user.</p>
+				<div class="call-out">
+				<h2>Guilding Principles</h2>
+				<ol>
+					<li>At any given time, I will probably always have at least 30 tabs open in my browser &mdash; that's okay.</li>
+					<li>A website is probably never done. You might have finished this version or iteration, but there is always more to do. </li>
+					<li>Content on the web is the most important thing. Avoid being clever when you can be  clear. And don't let visuals or technology get in the way.</li>
+					<li>When people talk about redoing their website, they usually start by talking about the visual design. The bigger question is whether the current site is solving the goals of the site owner and of the people who are using it. Design should only be layered on as a tool to help guide the user to the content.</li>
+					<li>How we build stuff for the web now will not be how we will do it in the very near future. Things change fast and we have to embrace learning.</li>
+					
+				</ol>
+			</div>
+			
+
+			<p>I am a graduate from MCTC’s web and interactive media program. I am always looking for new challenges and am excited to continue to learn and grow as part of a dynamic team.</p>
 			
 		</article>
 		<article class="full-width">
 			<div class="about__connect">
 				<div class="about__connect-inner">
 					<header>
-						<h3>Connect with me</h3>
+						<h2>Connect with me</h2>
 					</header>
 					<p class="icon__wrapper">
 						<a href="https://www.linkedin.com/in/jeffreysmith9" target="_blank"><span class="icon-linkedin"></span></a>

@@ -49,6 +49,9 @@
     transition: all .3s;
     transform: translateY(0) scale(1);
   }
+  @media (max-width: $medium-screen) {
+    height: 25px;
+  }
 }
 
 .index {

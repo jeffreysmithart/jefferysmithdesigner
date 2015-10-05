@@ -1,0 +1,11 @@
+.form-wrapper {
+  margin-bottom: em(25);
+  @include row;
+  &-inner {
+    @include span-columns(12);
+    @media (min-width: $screen-sm) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}

@@ -2,7 +2,11 @@
   margin-top: em(20);
   min-width: 220px;
   text-align: center;
-  border: 1px solid $blue-gray;
-  color: $blue-gray;
+  border: 1px solid $orange;
+  color: $orange;
   background-color: transparent;
+  &:hover, &:focus {
+    background-color: darken($orange, 15%);
+    border-color: darken($orange, 15%);
+  }
 }

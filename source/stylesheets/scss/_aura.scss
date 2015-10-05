@@ -46,7 +46,9 @@
     background: $aura-blue;
     color: $offwhite;
     background-image: url("../img/aura-overlay-2.png");
-    background-size: 100% auto;
+    background-size: cover;
+    backgroun-repeat: no-repeat;
+    background-position: center;
     h3 {
       font-size: 2rem;
     }
@@ -57,7 +59,6 @@
       margin-top: 1rem;
       padding-top: 1rem;
       font-size: 3rem;
-      @include zona--semibold;
       color: $dark-blue;
     }
     .top {}

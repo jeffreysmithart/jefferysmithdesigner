@@ -1,34 +1,36 @@
 ---
 title: Contact
 page_classe: 'contact'
-headercolor: CA9F9F
+headercolor: 102C5A
 ---
 <section id="header" <% if current_page.data.headercolor %>
-        style="background-color:#<%= current_page.data.headercolor %>;"
-    <% end %>>
-	<section class="header-inner row">
-		<article class="head__img js-height">
-			<%= image_tag 'jeffrey-square.jpg' %>
-		</article>
-		<article class="head__headline js-height">
-			<h1>Contact me</h1>
-		</article>
+	style="background-color:#<%= current_page.data.headercolor %>;"
+	<% end %>>
+	<div class="color-block green"></div>
+	<div class="color-block blue"></div>
+	<div class="title__box">
+		<div class="header-inner text-box">
+			<h1>Contact Me</h1>
+			<p>I love hearing from people.<br> Please send me an email at <a href="mailto:jeffrey@jeffreysmithdesigner.com">jeffrey@jeffreysmithdesigner.com</a> or fill out the form below.</p>
+		</div>
 		
-	</section>
-	
+	</div>
 </section>
-
 <section id="about__box">
 	<div class="constrain main-content">
-		<article class="about__text">
+		<article class="about__text form-wrapper">
 			
-			<form accept-charset="UTF-8" action="https://formkeep.com/f/84e6d81e8d84" method="POST">
-			  <input type="hidden" name="utf8" value="✓">
-			  <input type="email" name="email" placeholder="Your Email">
-				<input type="text" name="name" placeholder="Your Name">
-				<textarea  name="textarea" placeholder="Your Comment"></textarea>
-			  <button type="submit" class="btn-primary">Submit</button>
-			</form>
+			<div class="form-wrapper-inner">
+				<form accept-charset="UTF-8" action="https://formkeep.com/f/84e6d81e8d84" method="POST">
+					
+					<input type="email" name="email" placeholder="Your Email">
+					<input type="text" name="name" placeholder="Your Name">
+					<textarea  name="textarea" placeholder="Your Comment"></textarea>
+					<button type="submit" class="btn-primary">Submit</button>
+				</form>
+			</div>
+		</article>
+		<article class="full-width">
 			<div class="about__connect">
 				<div class="about__connect-inner">
 					<header>

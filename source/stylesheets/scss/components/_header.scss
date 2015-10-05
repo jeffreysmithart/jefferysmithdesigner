@@ -14,8 +14,13 @@
 
 .header-inner, .head__inner {
   @include outer-container(1000px);
-  margin-top: em(160);
-  margin-bottom: em(100);
+  margin-top: em(125);
+  margin-bottom: em(70);
+  &.text-box {
+    p {
+      font-size: em(24);
+    }
+  }
 }
 
 .head__img {

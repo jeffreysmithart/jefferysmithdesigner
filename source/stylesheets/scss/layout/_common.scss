@@ -35,10 +35,67 @@
 
 //text layouts
 .text-block {
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(10);
+  @include shift(1);
+  @media (min-width: $medium-screen) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+  .call-out {
+    text-align: center;
+    border-top: 1px solid currentColor;
+    margin-bottom: em(25);
+    margin-top: em(25);
+    h2 {
+      display: inline-block;
+      border: 1px solid currentColor;
+      margin-top: -1px;
+      padding: 0 10px 3px;
+    }
+  }
+  ul {
+    list-style: initial;
+    column-width: em(300);
+    text-align: left;
+    li {
+      margin-left: 40px;
+      margin-bottom: 10px;
+      @media (max-width: $medium-screen) {
+        font-size: 1em;
+      }
+    }
+  }
+  ol {
+    list-style: decimal;
+    padding-left: 40px;
+    text-align: left;
+  }
+  li {
+    font-size: em(24);
+    margin-bottom: 10px;
+    @media (max-width: $medium-screen) {
+      font-size: 1em;
+    }
+  }
 }
 
 .full-width {
   @include span-columns(12);
+}
+
+.image-stretch {
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    outline: 1px solid rgba(255, 255, 255, 0.4);
+    outline-offset: -10px;
+  }
+  margin-left: -8.5298%;
+  margin-right: -8.5298%;
+  @media (min-width: $screen-sm) {
+    margin-left: -17.05961%;
+    margin-right: -17.05961%;
+  }
+  margin-bottom: 1em;
 }
