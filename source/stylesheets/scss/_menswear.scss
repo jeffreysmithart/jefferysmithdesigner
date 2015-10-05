@@ -4,7 +4,7 @@ div.menswear {
   background-repeat: no-repeat;
   blockquote {
     font-size: 2rem;
-    @include crimson;
+    margin-top: 0;
     p {
       font-size: 2rem;
     }
@@ -142,7 +142,7 @@ div.menswear {
   }
   .next {
     background: darken($green, 20);
-    background: linear-gradient(45deg, $trans-teal 0%, $trans-teal 100%), url("../img/menswear_table.jpg");
+    background: linear-gradient(45deg, $trans-purple 0%, $trans-purple 100%), url("../img/eclipse_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     p, h2, h4 {
