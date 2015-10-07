@@ -35,12 +35,12 @@
       }
       a {
         display: block;
-        padding: em(10) 1em;
+        padding: em(10) 0.8em;
         color: currentColor;
         font-family: $sans-serif;
         text-transform: capitalize;
         letter-spacing: 1px;
-        font-size: .85em;
+        font-size: .75em;
         @media (min-width: 561px) {
           font-size: 1em;
           padding: em(10) em(20);
