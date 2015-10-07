@@ -16,6 +16,7 @@
   @include outer-container(1000px);
   margin-top: em(125);
   margin-bottom: em(70);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   &.text-box {
     p {
       font-size: em(24);
@@ -38,5 +39,59 @@
   h1 {
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+//----------------------
+//color-blocking
+//----------------------
+.color-block {
+  height: 165%;
+  position: absolute;
+  width: 60%;
+  @media #{$medium-up} {
+    height: 165%;
+  }
+  @media #{$large-up} {
+    height: 175%;
+    width: 50%;
+  }
+}
+
+.block1 {
+  background: $blue-gray;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: rotate(-38deg) translate(110%, 0%);
+  @media only screen and (min-width: 40.063em) and (max-width: rem-calc(835)) {
+    transform: rotate(-38deg) translate(70%, 0%);
+  }
+  @media #{$large-up} {
+    transform: rotate(-38deg) translate(50%, -30%);
+  }
+}
+
+.block2 {
+  background: $trans-blue;
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  z-index: -1;
+  transform: rotate(38deg) translate(-90%, -10%);
+  @media only screen and (min-width: 40.063em) and (max-width: rem-calc(1218)) {
+    transform: rotate(38deg) translate(-70%, -10%);
+  }
+  @media only screen and (min-width: rem-calc(1219)) {
+    transform: rotate(38deg) translate(-50%, -30%);
   }
 }

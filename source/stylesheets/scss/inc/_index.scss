@@ -1,52 +1,6 @@
 #header {
   overflow: hidden;
   background: #102C5A;
-  .color-block {
-    width: 50%;
-    height: 150%;
-    display: inline;
-    position: absolute;
-    @media #{$medium-up} {
-      height: 165%;
-    }
-    @media #{$large-up} {
-      height: 175%;
-    }
-  }
-  .green {
-    background: $blue-gray;
-    transform: rotate(-38deg);
-    margin: -31% 10%;
-    -webkit-transform-origin: right bottom;
-    -moz-transform-origin: right bottom;
-    -ms-transform-origin: right bottom;
-    -o-transform-origin: right bottom;
-    transform-origin: right bottom;
-    z-index: -1;
-    @media only screen and (min-width: 40.063em) and (max-width: rem-calc(835)) {
-      margin: -30% 15%;
-    }
-    @media #{$large-up} {
-      margin: -30% 10%;
-    }
-  }
-  .blue {
-    background: $trans-blue;
-    transform: rotate(38deg);
-    margin: -30% 40%;
-    -webkit-transform-origin: left bottom;
-    -moz-transform-origin: left bottom;
-    -ms-transform-origin: left bottom;
-    -o-transform-origin: left bottom;
-    transform-origin: left bottom;
-    z-index: -1;
-    @media only screen and (min-width: 40.063em) and (max-width: rem-calc(1218)) {
-      margin: -30% 35%;
-    }
-    @media only screen and (min-width: rem-calc(1219)) {
-      margin: -28% 43%;
-    }
-  }
   .title__box {
     margin: em(160) auto em(100);
     text-align: center;

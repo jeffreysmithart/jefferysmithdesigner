@@ -4,6 +4,9 @@
 
 .light {
   color: $gray;
+  .header-inner, .head__inner {
+    text-shadow: none;
+  }
 }
 
 //Reuseable layout sections

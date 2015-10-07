@@ -1,4 +1,12 @@
-.about {}
+.about {
+  .color-block {
+    opacity: 0.5;
+    &.block1 {
+      background: rgba(125, 191, 197, 0.32);
+      transform: rotate(-38deg) translate(70%, -20%);
+    }
+  }
+}
 
 .about {
   &__inner {
