@@ -43,6 +43,10 @@ configure :development do
   activate :livereload
 end
 
+set :url_root, 'http://jeffreysmithdesigner.com'
+
+activate :search_engine_sitemap
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

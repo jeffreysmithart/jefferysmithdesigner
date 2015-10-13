@@ -115,13 +115,17 @@
       font-size: 1rem;
     }
   }
+  a {
+    margin-right: 1.5rem;
+    @media (min-width: 561px) {
+      margin-right: 2rem;
+    }
+  }
   span {
     font-size: 2.25rem;
-    margin-right: 1.5rem;
     @include transition;
     @media (min-width: 561px) {
       font-size: 2.7rem;
-      margin-right: 2rem;
     }
     &:hover {
       color: darken($blue, 20);

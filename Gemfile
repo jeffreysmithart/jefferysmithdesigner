@@ -9,6 +9,8 @@ gem 'zurb-foundation', '~> 4.3.2'
 gem "nokogiri"
 gem 'middleman-autoprefixer'
 
+gem 'middleman-search_engine_sitemap'
+
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
