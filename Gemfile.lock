@@ -115,7 +115,7 @@ GEM
       rouge (~> 0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
-    multi_json (1.11.2)
+    multi_json (1.14.1)
     neat (1.7.2)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -127,7 +127,7 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
-    rack (1.6.4)
+    rack (1.6.12)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
@@ -141,7 +141,7 @@ GEM
     sass (3.4.16)
     sitemap_generator (4.1.0)
       builder
-    sprockets (2.12.4)
+    sprockets (2.12.5)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
